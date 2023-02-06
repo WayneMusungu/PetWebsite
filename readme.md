@@ -1,6 +1,6 @@
 # Django Pet website.
 
-This is a project about Pets, a user is required to create an account then they can create and view all the pets, know the pet species and the date of birth.
+This is a project about Pets, a user is required to create an account then they can create and view all the pets, know the pet species and its date of birth.
 
 ### Cloning the repository
 

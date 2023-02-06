@@ -1,8 +1,6 @@
 from django.contrib import admin
 from .models import Pet
 
+@admin.register(Pet)
 class PetAdmin(admin.ModelAdmin):
-    list_display = ['user', 'species']
-
-# Register your models here.
-admin.site.register(Pet, PetAdmin)
+    list_display = ['name', 'species', 'year_of_birth', 'user']

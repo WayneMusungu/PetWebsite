@@ -32,7 +32,12 @@ def RegisterUser(request):
 
             user = User.objects.create_user(first_name=first_name, last_name=last_name, username=username, email=email, password=password)
             user.save()
-            return redirect('home')
+            if user is not None:
+                auth.login(request, user)
+                next_url = request.GET.get('next', 'home')
+                return redirect(next_url)
+            else:
+                return redirect('registerUser')
         else:
             print(form.errors)
     else:

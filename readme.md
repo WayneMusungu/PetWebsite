@@ -1,5 +1,7 @@
 # Django Pet website.
 
+This is a project about Pets, a user is required to create an account then they can create and view all the pets, know the pet species and the date of birth.
+
 ### Cloning the repository
 
 --> Clone the repository using the command below :
@@ -64,7 +66,3 @@ python manage.py runserver
 > ⚠ Then, the development server will be started at http://127.0.0.1:8000/
 
 #
-
-
-
-
